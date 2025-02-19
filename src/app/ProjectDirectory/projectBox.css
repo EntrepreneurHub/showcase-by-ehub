@@ -1,0 +1,53 @@
+.projectBox {
+    background-color: grey;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-sizing: border-box;
+  }
+  
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .ovalImage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .textContainer h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .textContainer p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .projectGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .projectBox {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projectBox {
+      flex: 1 1 100%;
+    }
+  }

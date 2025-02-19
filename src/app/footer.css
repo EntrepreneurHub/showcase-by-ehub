@@ -1,0 +1,36 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .footerContent h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .footerContent p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent h1 {
+      font-size: 1.25rem;
+    }
+  
+    .footerContent p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footerContent h1 {
+      font-size: 1rem;
+    }
+  
+    .footerContent p {
+      font-size: 0.75rem;
+    }
+  }

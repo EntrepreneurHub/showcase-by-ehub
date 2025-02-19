@@ -1,12 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
-import ImgTwo from './Img/imageTwo.png';
 
-const SecondSection: React.FC = () => {
+const AboutSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center p-8">
       <div className="flex-1 flex justify-center md:justify-start mb-4 md:mb-0">
-        <Image src={ImgTwo} alt="About Us" width={500} height={300} className="max-w-full h-auto" />
+        <Image 
+          src="/images/imageTwo.png" 
+          alt="About Us" 
+          width={500} 
+          height={300} 
+          className="max-w-full h-auto" 
+        />
       </div>
       <div className="flex-1 md:ml-8 text-center md:text-left">
         <h1 className="text-4xl mb-4 text-black">About Us</h1>
@@ -18,4 +23,4 @@ const SecondSection: React.FC = () => {
   );
 };
 
-export default SecondSection;
+export default AboutSection;

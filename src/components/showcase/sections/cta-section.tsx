@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const WeDo: React.FC = () => {
+const CTASection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center p-8">
       <div className="flex-1 md:mr-8 mb-4 md:mb-0 text-center md:text-left">
@@ -12,8 +12,10 @@ const WeDo: React.FC = () => {
         </p>
       </div>
       <div className="flex-1 flex justify-center md:justify-end">
-        <Link href="/ProjectDirectory" 
-          className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-800 transition-colors">
+        <Link 
+          href="/showcase/project-directory" 
+          className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-800 transition-colors"
+        >
           See our Projects
         </Link>
       </div>
@@ -21,4 +23,4 @@ const WeDo: React.FC = () => {
   );
 };
 
-export default WeDo;
+export default CTASection;

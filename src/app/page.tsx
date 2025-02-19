@@ -1,21 +1,7 @@
-import React from 'react';
-import Navbar from './navbar';
-import FirstSection from './firstSection';
-import SecondSection from './secondSection';
-import WeDo from './weDo';
-import MeetTeam from './meetTeam';
-import Footer from './footer';
-import './page.css';
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <div>
-      <Navbar />
-      <FirstSection />
-      <SecondSection />
-      <WeDo />
-      <MeetTeam />
-      <Footer />
-    </div>
-  );
-}
+// This is a feature module of EntrepreneurHub
+// All routes in this app should be under /showcase/*
+export default function RootPage() {
+  redirect('/showcase');
+} 

@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import ImgOne from './Img/imgOne.jpg';
 
-const FirstSection: React.FC = () => {
+const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center p-8">
       <div className="flex-1 md:mr-8 mb-4 md:mb-0 text-center md:text-left">
@@ -15,16 +14,22 @@ const FirstSection: React.FC = () => {
           <button className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
             For Judges
           </button>
-          <Link href="/SignIn" className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center">
+          <Link href="/showcase/auth" className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center">
             For Participants
           </Link>
         </div>
       </div>
       <div className="flex-1 flex justify-center md:justify-end">
-        <Image src={ImgOne} alt="Showcase" width={500} height={300} className="max-w-full h-auto" />
+        <Image 
+          src="/images/imgOne.jpg" 
+          alt="Showcase" 
+          width={500} 
+          height={300} 
+          className="max-w-full h-auto" 
+        />
       </div>
     </div>
   );
 };
 
-export default FirstSection;
+export default HeroSection;

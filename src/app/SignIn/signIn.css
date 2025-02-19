@@ -1,0 +1,142 @@
+.signInPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+}
+
+.signInPage * {
+  box-sizing: border-box;
+}
+
+.signInPage .loginContainer {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 360px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.signInPage .loginContainer h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.signInPage .loginContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signInPage .loginContainer label {
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.signInPage .loginContainer input[type="email"],
+.signInPage .loginContainer input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signInPage .loginContainer input[type="email"]:focus,
+.signInPage .loginContainer input[type="password"]:focus {
+  border-color: #6b73ff;
+  box-shadow: 0 0 8px rgba(107, 115, 255, 0.4);
+  outline: none;
+}
+
+.signInPage .extraOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.signInPage .extraOptions label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.signInPage .extraOptions input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.signInPage .extraOptions a {
+  color: #6b73ff;
+  text-decoration: none;
+}
+
+.signInPage .extraOptions a:hover {
+  text-decoration: underline;
+}
+
+.signInPage .loginContainer button {
+  padding: 0.75rem;
+  background: #6b73ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signInPage .loginContainer button:hover {
+  background: #000dff;
+}
+
+.signInPage .footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signInPage .footer a {
+  color: #6b73ff;
+  text-decoration: none;
+}
+
+.signInPage .footer a:hover {
+  text-decoration: underline;
+}
+
+.signInPage .homeButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.signInPage .homeButton:hover {
+  background: #f0f0f0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import ImgOne from './Img/imgOne.jpg';
 import './firstSection.css';
 
@@ -11,7 +12,9 @@ const FirstSection: React.FC = () => {
         <p>Whether it’s a Youtube idea, a unique coding project, or a research paper, you can display your work here for students around the world to see!</p>
         <div className="buttonGroup">
           <button className="judgeButton">For Judges</button>
-          <button className="participantButton">For Participants</button>
+          <Link href="/SignIn" legacyBehavior>
+            <a className="participantButton">For Participants</a>
+          </Link>
         </div>
       </div>
       <div className="imageContent">

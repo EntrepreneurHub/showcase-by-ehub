@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import './weDo.css';
 
 const WeDo: React.FC = () => {
@@ -10,7 +11,9 @@ const WeDo: React.FC = () => {
         Want to join in one the entrepreneurial fun? Sign up today to put yourself on the map, along with other students around the globe!</p>
       </div>
       <div className="buttonContent">
-        <button className="seeProjectsButton">See our Projects</button>
+        <Link href="/ProjectDirectory" legacyBehavior>
+          <a className="seeProjectsButton">See our Projects</a>
+        </Link>
       </div>
     </div>
   );

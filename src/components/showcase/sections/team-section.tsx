@@ -17,7 +17,7 @@ const TeamSection: React.FC = () => {
           <h1 className="text-4xl mb-4 text-black hover:text-gray-800 transition-colors">Get to Know Us</h1>
         </Link>
         <p className="text-base leading-relaxed text-black">
-          Interested in who's behind this project? Click on the button to the left to learn more about the team behind EntrepreneurHub!
+          Interested in who&apos;s behind this project? Click on the button to the left to learn more about the team behind EntrepreneurHub!
         </p>
       </div>
     </div>

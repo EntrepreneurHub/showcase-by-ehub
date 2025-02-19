@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
       <div className="flex-1 md:mr-8 mb-4 md:mb-0 text-center md:text-left">
         <h1 className="text-4xl mb-4 text-black">Innovation, Showcased</h1>
         <p className="text-base leading-relaxed text-black">
-          Whether it's a Youtube idea, a unique coding project, or a research paper, you can display your work here for students around the world to see!
+          Whether it&apos;s a Youtube idea, a unique coding project, or a research paper, you can display your work here for students around the world to see!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center md:justify-start">
           <button className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">

@@ -7,7 +7,7 @@ const CTASection: React.FC = () => {
       <div className="flex-1 md:mr-8 mb-4 md:mb-0 text-center md:text-left">
         <h1 className="text-4xl mb-4 text-black">Like What We Do?</h1>
         <p className="text-base leading-relaxed text-black">
-          Like what we're about and want to stay updated on our development, the latest entrepreneurial news, other relevant, life-changing, high-impact events? 
+          Like what we&apos;re about and want to stay updated on our development, the latest entrepreneurial news, other relevant, life-changing, high-impact events? 
           Want to join in one the entrepreneurial fun? Sign up today to put yourself on the map, along with other students around the globe!
         </p>
       </div>

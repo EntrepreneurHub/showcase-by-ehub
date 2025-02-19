@@ -1,12 +1,11 @@
 import React from 'react';
-import './footer.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="footerContent">
-        <h1>Entrepreneur Hub</h1>
-        <p>&copy; Entrepreneur Hub Inc</p>
+    <footer className="bg-black text-white text-center py-4">
+      <div>
+        <h1 className="text-2xl md:text-xl sm:text-lg mb-1">Entrepreneur Hub</h1>
+        <p className="text-base md:text-sm sm:text-xs">&copy; Entrepreneur Hub Inc</p>
       </div>
     </footer>
   );

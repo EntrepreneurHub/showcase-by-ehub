@@ -14,9 +14,9 @@ const AboutSection: React.FC = () => {
         />
       </div>
       <div className="flex-1 md:ml-8 text-center md:text-left">
-        <h1 className="text-4xl mb-4 text-black">About Us</h1>
+        <h1 className="text-4xl mb-4 text-black">About Showcase by EntrepreneurHub</h1>
         <p className="text-base leading-relaxed text-black">
-          Showcase by EHub is a project discovery platform designed to empower college students by giving them a space to showcase their entrepreneurial projects and small businesses. Whether its a YouTube channel, personal brand, local food shop, mechanic service, agency, app, or anything else—Showcase by EHub is here to help bring your any and all of your ideas to life.
+          Showcase by EntrepreneurHub is a dynamic live event platform that powers entrepreneurial competitions and pitch events. As part of the EntrepreneurHub ecosystem, it enables real-time presentation management, live judging, and instant feedback during startup competitions and demo days. Whether you're hosting an official EntrepreneurHub event or organizing your own startup showcase, our platform provides the tools to make your live event a success.
         </p>
       </div>
     </div>

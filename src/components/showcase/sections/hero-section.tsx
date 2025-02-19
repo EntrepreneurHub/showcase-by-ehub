@@ -6,16 +6,16 @@ const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center p-8">
       <div className="flex-1 md:mr-8 mb-4 md:mb-0 text-center md:text-left">
-        <h1 className="text-4xl mb-4 text-black">Innovation, Showcased</h1>
+        <h1 className="text-4xl mb-4 text-black">Showcase by EntrepreneurHub</h1>
         <p className="text-base leading-relaxed text-black">
-          Whether it&apos;s a Youtube idea, a unique coding project, or a research paper, you can display your work here for students around the world to see!
+          Experience real-time entrepreneurial presentations and competitions on EntrepreneurHub's live event platform! Whether you're a judge evaluating pitches or a participant showcasing your startup, our platform makes it seamless to present, evaluate, and engage in the moment.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center md:justify-start">
           <button className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
-            For Judges
+            Judge Dashboard
           </button>
-          <Link href="/showcase/auth" className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center">
-            For Participants
+          <Link href="/auth" className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors text-center">
+            Present Your Startup
           </Link>
         </div>
       </div>

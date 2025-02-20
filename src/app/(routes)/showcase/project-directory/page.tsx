@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '@/components/shared/layout/navbar';
-import Footer from '@/components/shared/layout/footer';
 import ProjectsHeader from '@/components/showcase/projects/projects-header';
 import ContentBox from '@/components/showcase/projects/content-box';
 import ProjectBox from '@/components/showcase/projects/project-box';
@@ -18,7 +16,6 @@ export default function ProjectDirectoryPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       <ProjectsHeader />
       <div className="container mx-auto px-4 py-8">
         <ContentBox 
@@ -31,7 +28,6 @@ export default function ProjectDirectoryPage() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

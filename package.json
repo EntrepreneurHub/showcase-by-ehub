@@ -1,29 +1,16 @@
 {
   "name": "showcase-by-ehub",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.7",
-    "postcss": "^8.5.2",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "dev": "docker-compose up",
+    "dev:build": "docker-compose up --build",
+    "stop": "docker-compose down",
+    "clean": "docker-compose down -v && rm -rf node_modules frontend/node_modules backend/node_modules package-lock.json frontend/package-lock.json backend/package-lock.json",
+    "db:seed": "docker-compose exec postgres psql -U postgres -d showcase_db -f /seeds/test_data.sql"
   }
 }
